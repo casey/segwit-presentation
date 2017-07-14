@@ -118,4 +118,3 @@ if sys.argv[1:] == ["--capture"]:
       dst = f'www/captures/{entry.index}'
       print(f'saving `{entry.url}` to `{dst}`...')
       subprocess.run(['webkit2png', entry.url, '-o', dst, '-F'], check=True)
-      # -W -H
