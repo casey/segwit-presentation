@@ -1,0 +1,249 @@
+- date:   2010-07-15
+  title:  Bitcoin 0.3.1 - First release with block size limit
+  author: Satoshi Nakamoto
+  url:    https://bitcointalk.org/index.php?topic=383.0
+
+- date:   2011-04-28
+  title:  Satoshi Disappear Day
+  author: kiba
+  url:    https://bitcointalk.org/index.php?topic=6730.0
+
+- date:   2014-03-12
+  title:  'BIP 62: Dealing with malleability'
+  author: Pieter Wuille
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0062.mediawiki
+
+- date:   2014-08-15
+  title:  0.10 release of Bitcoin XT
+  author: Mike Hearn
+  url:    https://github.com/bitcoinxt/bitcoinxt/releases/tag/v0.10
+
+- date:   2015-06-11
+  title:  'BIP 100: Dynamic maximum block size by miner vote'
+  author: Jeff Garzik, Tom Harding, Dagur Valberg Johannsson
+  url:    https://github.com/jgarzik/bip100/blob/master/bip-0100.mediawiki
+
+- date:   2015-06-22
+  title:  'BIP 101: Increase maximum block size'
+  author: Gavin Andresen
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0101.mediawiki
+
+- date:   2015-06-22
+  title:  'Pull request to add BIP 101 to Bitcoin Core'
+  author: Gavin Andresen
+  url:    https://github.com/bitcoin/bitcoin/pull/6341
+
+- date:   2015-06-23
+  title:  'BIP 102: Block size increase to 2MB'
+  author: Jeff Garzik
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0102.mediawiki
+
+- date:   2015-07-21
+  title:  'BIP 103: Block size following technological growth'
+  author: Pieter Wuille
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0103.mediawiki
+
+- date:   2015-08-06
+  title:  Bitcoin XT merges BIP 101
+  author: Gavin Andresen
+  url:    https://github.com/bitcoinxt/bitcoinxt/commit/946e3ba8c7806a66c2b834d3817ff0c986c0811b 
+
+- date:   2015-10-04
+  title:  'BIP 9: Version bits with timeout and delay'
+  author: Pieter Wuille, Peter Todd, Greg Maxwell, Rusty Russell
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki
+
+- date:   2015-10-21
+  title:  Bitcoin core devs discuss viability of segwit as a soft fork
+  author: Luke-Jr, gmaxwell, btcdrak, et al
+  # url:    https://botbot.me/freenode/bitcoin-core-dev/2015-10-21/
+  url:    https://botbot.me/freenode/bitcoin-core-dev/msg/52398753/
+  img:    irc.png
+
+- date:   2015-12-07
+  title:  Segregated Witness at Scaling Bitcoin Hong Kong
+  author: Pieter Wuille
+  url:    https://youtu.be/zchzn7aPQjI?t=1m53s
+  img:    youtube.png
+
+
+- date:   2015-12-07
+  title:  Bitcoin Core Scaling Roadmap
+  author: Greg Maxwell
+  url:    https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011865.html
+
+- date:   2015-12-16
+  title:  Bitcoin Unlimited first released
+  # url:    https://coin.dance/nodes/unlimited
+  url:    https://github.com/BitcoinUnlimited/BitcoinUnlimited/releases/tag/zfinal_0.11cfg_stats
+
+- date:   2015-12-21
+  title:  'BIP 141: Segregated Witness'
+  author: Eric Lombrozo, Johnson Lau, Pieter Wuille
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
+
+- date:   2016-01-21
+  title:  Launch of Segregated Witness Testnet
+  author: Bitcoin Core
+  url:    https://bitcoincore.org/en/2016/01/21/launch_segwit_testnet/
+
+- date:   2016-01-28
+  title:  'BIP 109: One time-2MB block size increase'
+  author: Gavin Andresen
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0109.mediawiki
+
+- date:   2016-02-10
+  title:  Bitcoin Classic released
+  author: Gavin Andresen
+  url:    https://github.com/bitcoinclassic/bitcoinclassic/releases/tag/v0.11.2.cl1
+
+- date:   2016-02-21
+  title:  Bitcoin Roundtable Consensus
+  author: 
+  url:    https://medium.com/@bitcoinroundtable/bitcoin-roundtable-consensus-266d475a61ff
+
+- date:   2016-08-23
+  title:  Bitcoin Core version 0.13.0 released
+  author: Bitcoin Core
+  url:    https://bitcoin.org/en/release/v0.13.0
+
+- date:   2016-10-27
+  title:  Bitcoin Core version 0.13.1 released
+  author: Bitcoin Core
+  url:    https://bitcoin.org/en/release/v0.13.1
+
+- date:   2017-02-01
+  title:  'BIP 8: Version bits with lock-in by height'
+  author: Shaolin Fry
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0008.mediawiki
+
+- date:   2017-03-12
+  title:  'BIP 148: UASF'
+  author: Shaolin Fry
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0148.mediawiki
+
+- date:   2017-03-31
+  title:  Segwit2Mb - combined soft/hard fork - Request For Comments
+  author: Sergio Demian Lerner
+  url:    https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-March/013921.html
+
+- date:   2017-04-14
+  title:  'BIP 149: Segwit second deployment'
+  author: Shaolin Fry
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0149.mediawiki
+
+- date:   2017-05-22
+  title:  'BIP 91: Reduced threshold Segwit MASF'
+  author: James Hilliard
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0091.mediawiki
+
+- date:   2017-05-23
+  title:  Bitcoin Scaling Agreement at Consensus 2017
+  author: Digital Currency Group
+  url:    https://medium.com/@DCGco/bitcoin-scaling-agreement-at-consensus-2017-133521fe9a77
+
+- date:   2017-06-07
+  title:  User Activated Soft Fork Split Protection
+  author: James Hilliard
+  url:    https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-June/014508.html
+
+- date:   2017-06-14
+  title:  Update to be compatible with latest BIP91 spec
+  author: James Hilliard
+  url:    https://github.com/btc1/bitcoin/pull/21
+
+- date:   2017-06-14
+  title:  'UAHF: A contingency plan against UASF (BIP148)'
+  author: Bitmain
+  url:    https://blog.bitmain.com/en/uahf-contingency-plan-uasf-bip148/
+
+- date:   2017-07-13
+  title:  The present day
+  img:    dumpster.jpg
+
+- date:   2017-07-14
+  title:  BTC1 client deployment and testing
+  author: Segwit2x Team
+  url:    https://github.com/btc1/bitcoin/tags
+  img:    btc1-deployment.png
+
+- date:   2017-07-15
+  title:  Beginning of last full difficulty adjustment period before UASF
+  url:    https://blockchain.info/charts/difficulty
+  img:    difficulty.png
+
+- date:   2017-07-21
+  title:  BIP91 signalling to start
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0091.mediawiki
+  img:    bip91-signaling.png
+
+- date:   2017-07-23
+  title:  Earliest probable BIP91 lock-in
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0091.mediawiki
+  img:    bip91-lock-in.png
+
+- date:   2017-07-25
+  title:  Earliest probable BIP91 activation
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0091.mediawiki
+  img:    bip91-activation.png
+
+- date:   2017-07-28
+  title:  End of last full difficulty adjustment period before UASF
+  url:    https://blockchain.info/charts/difficulty
+  img:    difficulty-steps.png
+
+- date:   2017-07-29
+  title:  BIP 91 chain-split avoidance deadline
+  img:    bip91-deadline.png
+
+- date:   2017-07-31
+  title:  BIP 141 Deadline
+  img:    bip141-deadline.png
+
+- date:   2017-08-01
+  title:  UASF / BIP 148 activation
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0148.mediawiki
+  img:    attac.png
+
+- date:   2017-08-01
+  title:  UASF / BIP 148 activation
+  url:    https://github.com/bitcoin/bips/blob/master/bip-0148.mediawiki
+  img:    bip148-activation.png
+
+- date:   2017-08-01
+  title:  Bitcoin ABC fork begins mining
+  author: Bitmain
+  url:    https://blog.bitmain.com/en/uahf-contingency-plan-uasf-bip148/
+  img:    rocket.png
+
+- date:   2017-08-04
+  title:  Potential Bicoin ABC fork release
+  author: Bitmain
+  url:    https://blog.bitmain.com/en/uahf-contingency-plan-uasf-bip148/
+  img:    explosion.png
+
+- date:   2017-08-04
+  title:  Potential Bicoin ABC fork release
+  author: Bitmain
+  url:    https://blog.bitmain.com/en/uahf-contingency-plan-uasf-bip148/
+  img:    bitcoin-abc-launch.png
+
+- date:   2017-08-15
+  title:  Potential UASF chain proof-of-work change
+  img:    uasf-pow-change.png
+
+- date:   2017-08-15
+  title:  Earliest segwit lock in via BIP 91
+  img:    segwit-lock-in.png
+
+- date:   2017-08-22
+  title:  Earliest segwit activation via BIP 91
+  img:    segwit-activation.png
+
+- date:  2017-11-16
+  title: BIP 149 deployment start date
+  url:   https://github.com/bitcoin/bips/blob/master/bip-0149.mediawiki
+
+- date:   2017-11-22
+  title:  Earliest possible BTC1 hard fork
+  img:    2x-hardfork.png

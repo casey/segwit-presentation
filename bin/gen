@@ -1,0 +1,121 @@
+#!/usr/bin/env python3
+
+import jinja2, yaml, datetime, sys, subprocess
+
+def say(*args):
+  print('------>', *args)
+
+def die(*args):
+  if args:
+    say(*args)
+  sys.exit(1)
+
+def slurp(path):
+  with open(path) as f:
+    return f.read()
+
+def dump(path, data):
+  with open(path, 'w') as f:
+    return f.write(data)
+
+def tap(x):
+  print(x)
+  return x
+
+def display_date(date):
+  month  = date.strftime('%B')
+  day    = date.day
+
+  if 4 <= day <= 20 or 24 <= day <= 30:
+    suffix = "th"
+  else:
+    suffix = ["st", "nd", "rd"][day % 10 - 1]
+
+  return f'{month} {day}{suffix}, {date.year}'
+
+class Contextual:
+  def __iter__(self):
+    return self.__dict__.items().__iter__()
+
+class Timeline:
+  def __init__(self, *entries):
+    self.entries = []
+    for entry in entries:
+      try:
+        entry = Entry(**entry)
+        assert type(entry.date) == datetime.date
+        self.entries.append(entry)
+      except:
+        print('error processing entry:', entry.__dict__)
+        raise
+    first         = min(entry.date for entry in self.entries)
+    last          = max(entry.date for entry in self.entries)
+    total_seconds = (last - first).total_seconds()
+
+    for i, entry in enumerate(self.entries):
+      entry.elapsed   = (entry.date - first).total_seconds() / total_seconds
+      entry.remaining = (last - entry.date).total_seconds() / total_seconds
+      entry.index     = i
+
+class Entry:
+  def __init__(self, date, title, author=None, url=None, img=None):
+    self.date         = date
+    self.title        = title
+    self.author       = author
+    self.url          = url
+    self.img          = img
+    self.elapsed      = None
+    self.remaining    = None
+    self.index        = None
+    self.display_date = display_date(date)
+    if date < datetime.datetime.today().date():
+      self.future_class = 'timeline-past'
+      self.future       = False
+    elif date == datetime.datetime.today().date():
+      self.future_class = 'timeline-present'
+      self.future       = False
+    else:
+      self.future_class = 'timeline-future'
+      self.future       = True
+
+class Links:
+  def __init__(self, **links):
+    self.links = []
+    for note in links:
+      url = links[note]
+      try:
+        self.links.append(Link(note, url))
+      except:
+        print('error processing link:', note, url)
+        raise
+
+class Link:
+  def __init__(self, note, url):
+    self.note = note
+    self.url  = url
+
+say('generating slides...')
+
+env = jinja2.Environment(
+  # lstrip_blocks=True,
+  # trim_blocks=True,
+)
+
+timeline = Timeline( *yaml.load(slurp('timeline.yaml')))
+links    = Links   (**yaml.load(slurp('links.yaml'   )))
+slides   = env.from_string(slurp('slides.md'))
+
+context = {
+  'timeline': timeline.entries,
+  'links':    links.links,
+}
+
+dump('www/index.md', slides.render(context))
+
+if sys.argv[1:] == ["--capture"]:
+  for entry in timeline.entries:
+    if entry.url:
+      dst = f'www/captures/{entry.index}'
+      print(f'saving `{entry.url}` to `{dst}`...')
+      subprocess.run(['webkit2png', entry.url, '-o', dst, '-F'], check=True)
+      # -W -H

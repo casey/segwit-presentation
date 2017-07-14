@@ -1,0 +1,37 @@
+wiki entry on block size controversy: https://en.bitcoin.it/wiki/Block_size_limit_controversy
+
+wiki entry on transaction format: https://en.bitcoin.it/wiki/Transaction
+
+bitcoin core block entry on benefits of segregated witness: https://bitcoincore.org/en/2016/01/26/segwit-benefits/
+
+let's talk bitcoin episode where andreas antonopolis answers questions about segwit: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-337-no-rulers-here
+
+segwit development timeline: https://segwit.org/i-heard-segwit-was-rushed-to-avoid-a-hard-fork-is-that-true-f89318aba593
+
+bitcoin network stats, including node deployment: https://bitnodes.21.co/dashboard/
+
+uasf bip 148 scenarios and game theory: https://medium.com/@jimmysong/uasf-bip148-scenarios-and-game-theory-9530336d953e
+
+bitcoin core's plan after segwit: https://bitcoincore.org/en/2016/06/24/segwit-next-steps/
+
+uasf and segwit2x timeline: https://bitcoinmagazine.com/articles/countdown-segwit-these-are-dates-keep-eye/
+
+graph of bitcoin hash power and difficulty adjustment periods: https://bitcoinwisdom.com/bitcoin/difficulty
+
+graph of difficulty adjustment periods: https://blockchain.info/charts/difficulty
+
+block signalling: https://coin.dance/blocks
+
+segwit activation periods: http://segwit.co
+
+segwit support by businesses and developers: https://en.bitcoin.it/wiki/Segwit_support
+
+UASF details and support: http://www.uasf.co/
+
+Pieter Wuille's presentation on segwit: https://youtu.be/fst1IK_mrng?t=37m15s
+
+details of how segwit interacts with covert and overt asciboost: https://bitslog.wordpress.com/2017/04/10/the-relation-between-segwit-and-asicboost-covert-and-overt/
+
+bitcoin core scaling roadmap: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011865.html
+
+learn me a bitcoin segregated witness faq: http://learnmeabitcoin.com/faq/segregated-witness

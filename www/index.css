@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+body {
+  font-family: 'Droid Serif';
+}
+
+h1, h2, h3 {
+  font-family: 'Droid Serif';
+  font-weight: normal;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: 'Ubuntu Mono';
+}
+
+.capture {
+  position:        relative;
+  background-size: cover;
+  width:           100%;
+  height:          75%;
+}
+
+.timeline {
+  width: 88%;
+}
+
+.timeline-header {
+  text-align: center;
+}
+
+.timeline-container {
+  width:            100%;
+  height:           16px;
+  display:          flex;
+  border:           1px solid black;
+}
+
+.timeline-legend {
+  display:         flex;
+  justify-content: space-between;
+  font-size:       75%;
+}
+
+.timeline-elapsed {
+  height:           16px;
+  background-color: #666;
+}
+
+.timeline-remaining {
+  height:           16px;
+  background-color: white;
+}
+
+.timeline-current {
+  width:            5px;
+  height:           100%;
+}
+
+.timeline-current-date {
+  position:  relative;
+  font-size: 75%;
+}
+
+.timeline-past    .timeline-current { background-color: cyan;   }
+.timeline-present .timeline-current { background-color: blue;   }
+.timeline-future  .timeline-current { background-color: orange; }
+
+#boromir {
+  background-image:  url('img/boromir.png');
+  background-size:   contain;
+  background-repeat: no-repeat;
+  position:          relative;
+  height:            50%;
+  width:             50%;
+}
