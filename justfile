@@ -12,7 +12,7 @@ open:
 	open 'http://localhost'
 
 serve:
-	cd www && sudo ../bin/serve
+	cd docs && sudo ../bin/serve
 
 watch:
 	fswatch -ro . | xargs -n1 ./bin/gen

@@ -110,11 +110,11 @@ context = {
   'links':    links.links,
 }
 
-dump('www/index.md', slides.render(context))
+dump('docs/index.md', slides.render(context))
 
 if sys.argv[1:] == ["--capture"]:
   for entry in timeline.entries:
     if entry.url:
-      dst = f'www/captures/{entry.index}'
+      dst = f'docs/captures/{entry.index}'
       print(f'saving `{entry.url}` to `{dst}`...')
       subprocess.run(['webkit2png', entry.url, '-o', dst, '-F'], check=True)
